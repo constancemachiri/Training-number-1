@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add ons Project </title>
+    <style>
+        .head{
+        height: 100px;
+    background-color: rgb(120, 120, 223);
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+
+}
+a{padding-top:75px ;
+text-align: center;
+font-size: 20px;}
+    .logo{width:100px;
+    height: 100px;}
+    h1 {
+  width: auto;
+  height: 50px;
+  text-align: center;
+  font-weight: 900; 
+  font-style: oblique;
+  color: rgb(61, 61, 146);
+  background: linear-gradient(45deg, blue, white, blue); 
+}
+.content img{width:300px;height:350px;}
+.first{display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+padding-left: 15px;
+padding-bottom: 15px;
+
+}
+.second{display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 15px;
+}
+.one:hover{border-radius: 50%;
+    cursor: pointer;transform: scale(1.1);
+    
+}
+.two:hover{
+    cursor: pointer;transform: scale(1.1);
+    border-radius: 50%;}
+    .three:hover{
+        cursor: pointer;transform: scale(1.1);
+        border-radius: 50%;}
+        .four:hover{border-radius: 50%;
+            cursor: pointer;transform: scale(1.1);}
+            .five:hover{border-radius: 50%;
+                cursor: pointer;transform: scale(1.1);}
+                .six:hover{border-radius: 50%;
+                    cursor: pointer;transform: scale(1.1);}
+    h2{text-align: center;}
+    .content{background-color: rgb(217, 241, 241);}
+    p{text-align: center;}
+    .black{background: black;}
+.black .content {background: rgb(30, 28, 28);
+    color:white}
+    .black p{background: black; color:white}
+    .black footer{color:gray}
+    .black h1{background: black; color:white}
+    .black .head{background: black; color:white}
+    .black footer{background: black; color:white}
+footer{text-align: center;
+color:blue}
+
+ </style>
+</head>
+<body>
+    <h1>VW Parts Hub</h1>
+<div class="head">
+<div><img class="logo"src="https://logowik.com/content/uploads/images/volkswagen-black2507.logowik.com.webp"/></div>
+<a href="#main">Menu</a>
+  <a href="#us">About Us</a>
+  <a href="#contact">Contact Us</a>
+    </div>
+    <div class="content" id="main">
+        <h2>Products Available </h2>
+        <div class="first"><img class="one"src="https://onlinecarparts.co.za/51885-large_default/vw-golf-iv-polo-9n-03-05-emblem.jpg" />
+            <img  class="two"src="https://onlinecarparts.co.za/39707-large_default/vw-polo-mk-iii-hatchback-right-hand-side-electric-headlight-headlamp-l1-2014-.jpg"/>
+            <img class="three"src="https://onlinecarparts.co.za/72697-large_default/vw-polo-vivo-14-18-right-hand-door-mirror-graine-with-wire-control.jpg"/>
+        </div>
+            <div class="second"><img class="four" src="https://spares4you.net.za/wp-content/uploads/2023/07/71rr5CVZmvL._AC_SL1500_.jpg"/>
+                <img  class="five"src="https://spares4you.net.za/wp-content/uploads/2023/07/VW-POLO-6C-GEARBOOT6.jpg"/>
+                 <img  class="six"src="https://spares4you.net.za/wp-content/uploads/2023/07/VW-POLO-6-CRYSTAL-FOGS.jpg"/></div>
+                 <p id="us">About Us<br/>
+                    Welcome to VW Parts Hub!<br/>
+                    
+                    At VW Parts Hub, we specialize in providing high-quality parts and accessories for Volkswagen vehicles. Our mission is to ensure that every VW owner has access to the best parts to keep their car running smoothly and efficiently.
+                    Whether you’re a DIY enthusiast or a professional mechanic, VW Parts Hub is your go-to destination for all things Volkswagen. Join our community of satisfied customers and experience the difference today!</p></div>
+                    <p id="contact"><a href="mailto:machiriconstance@gmail.com">machiriconstance@gmail.com</a></p>
+                    <button>Change Theme</button>
+                    <footer>Coded By Makome Constance Machiri</footer>
+                    <script>
+
+                        function turnblack(){
+                            let body = document.querySelector("body");
+                            body.classList.add("black");
+                        }
+                        let button = document.querySelector("button");
+                        button.addEventListener("click", turnblack);
+                        
+                        
+                           </script>  
+                </body>    
+
+
+</html>
